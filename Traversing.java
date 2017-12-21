@@ -1,3 +1,5 @@
+//Java program for illustrating Singly Linked List Traversal/Printing
+
 package Singly_Linked_List;
 public class Traversing {
 
