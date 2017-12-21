@@ -1,5 +1,5 @@
 //Java program for Finding Middle Node in a Linked List Using 1 Pointer Only
-
+//So here we are traversing the List Twice-> Time comp->O(N)
 package Singly_Linked_List;
 
 import java.util.Scanner;
