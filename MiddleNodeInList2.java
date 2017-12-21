@@ -1,16 +1,13 @@
 //Java program for Finding Middle Node in a Linked List Using 1 Pointer Only
 //So here we are traversing the List Twice-> Time comp->O(N)
+
 package Singly_Linked_List;
 
 import java.util.Scanner;
 
 public class MiddleNodeInList2{
 
-	Node head; 
-	
-    //maintaining previous pointer(i.e, pointing to previous node)
-	Node previous=null;
-	
+	Node head;
 	int count;
 	
 	static class Node
