@@ -15,6 +15,9 @@ public class Traversing {
 			current=current.next;
 		}
 		
+		//Here current becomes "null"
+		System.out.println(current);
+		
 	}
 
 }
