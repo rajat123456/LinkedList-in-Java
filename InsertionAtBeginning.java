@@ -7,6 +7,12 @@ public class InsertionAtBeginning {
 	
 	void printinglist(Node headreference)
 	{
+		//if head is null, that is no elements in List, then simply return
+		if(headreference==null)
+		{
+			return;
+		}
+		
 		//current pointing to the head node
 		Node current=headreference;
 		
