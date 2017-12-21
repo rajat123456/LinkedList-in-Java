@@ -55,7 +55,7 @@ public class InsertionAtGivenPosition {
 			
 		}
 		
-		while(count<pos-1)
+		while(count<pos-1) //since singly link list, so that's why (pos-1), since can't track previous one
 		{
 			count++;
 			loopthrough=loopthrough.next;
