@@ -16,6 +16,9 @@ public class LengthOfLinkedList {
 			current=current.next;
 		}
 		
+		//Here count becomes "null"
+		System.out.println(count);
+		
 		System.out.println("\n"+"length of Linked List is "+count);
 		
 	}
