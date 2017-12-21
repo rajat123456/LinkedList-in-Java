@@ -7,6 +7,12 @@ public class InsertionAtEnd {
 	
 	void printinglist(Node headreference)
 	{
+		//if head is null, that is no elements in List, then simply return
+		if(headreference==null)
+		{
+			return;
+		}
+		
 		//current pointing to the head node
 		Node current=headreference;
 		
@@ -26,6 +32,12 @@ public class InsertionAtEnd {
 	
 	void InsertAtLast(Node ReferenceOfHead)
 	{
+		//if head is null, that is no elements in List, then simply return
+		if(ReferenceOfHead==null)
+		{
+			return;
+		}
+		
 		Node newly=new Node(70);
 	    System.out.println("Now Inserting "+newly.data+" at end of existing List ");
 		Node current1=ReferenceOfHead;
