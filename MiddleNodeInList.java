@@ -95,7 +95,7 @@ public class MiddleNodeInList{
 		
 		new MiddleNodeInList().printinglist(first.head);
         
-		//Holding the reference of previous node into header pointer
+		//Holding the reference of middle node into header pointer
 		Node header=new MiddleNodeInList().findmidnode(first.head);
         
 		//printing middle node in Linked List
