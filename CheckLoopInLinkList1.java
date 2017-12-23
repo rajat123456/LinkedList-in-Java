@@ -1,4 +1,5 @@
 //Java program for Check, whether Link List has a Loop Using BRUTEFORCE APPROACH
+//Not so good approach, as it is hardcoded that loop occurs from last node to first only
 //So here we are traversing the List Once to check loop-> Time Comp(In Worst Case)->O(N)
 
 package Singly_Linked_List;
