@@ -7,7 +7,7 @@ package Singly_Linked_List;
 
 import java.util.Scanner;
 
-public class CheckLoopInLinkList2{
+class CheckLoopInLinkList2{
 
 	Node head;
 	int count;
@@ -25,21 +25,15 @@ public class CheckLoopInLinkList2{
 	  }
 	}
 
-	void printinglist(Node headreference)
-	{
-		if(headreference==null)
-		{
-			return;
-		}
-		
+	void checkloop(Node head)
+	{	
 		//current pointing to the head node
-		Node current=headreference;
+		Node current=head;
 		
 		//traversing whole list while "null" is not encountered
 		while(current!=null)
 		{
 			System.out.print(current.data+"-> ");
-			count++;
 			
 			//incrementing visited field of every node, which is visited
 			++current.visited;
@@ -49,19 +43,14 @@ public class CheckLoopInLinkList2{
 			{
 				//here printing the data part of the nodes which are forming a loop
 				System.out.println("\nThere is loop is linked list "+current.data+" is pointing back to "+current.next.data);
-                return;
+                                return;
 			}
 			
 			//incrementing the current pointer pointer to next node 		
 			current=current.next;
 			
 		}
-		
-		//here current becomes null
-		System.out.println(current);
-		System.out.println("length of Linked List is "+count);
-		
-		}
+	}
 	
 	public static void main(String[]args)
 	{
@@ -89,7 +78,7 @@ public class CheckLoopInLinkList2{
 		fifth.visited=0; 
 		sixth.visited=0;
 		
-		new CheckLoopInLinkList2().printinglist(first.head);
+		new CheckLoopInLinkList2().checkloop(first.head);
        
 }	        
 }	
