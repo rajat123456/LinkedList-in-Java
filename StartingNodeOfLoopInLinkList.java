@@ -5,7 +5,7 @@ package Singly_Linked_List;
 
 import java.util.Scanner;
 
-public class StartingNodeOfLoopInLinkList{
+class StartingNodeOfLoopInLinkList{
 
 	Node head;
 	int count;
@@ -21,25 +21,18 @@ public class StartingNodeOfLoopInLinkList{
 		  next=null;
 	  }
 	}
-
-	void printinglist(Node headreference)
+	
+	void checkloop(Node head)
 	{
-		if(headreference==null)
-		{
-			return;
-		}
-		
 		//both slow and fast pointers pointing to the head node
-		Node slowptr=headreference;
-		Node fastptr=headreference;
+		Node slowptr=head;
+		Node fastptr=head;
 		
 		//to check whether loop exist or not
 		int loopexist=0;
 		
 		//traversing whole list while "null" is not encountered
-		
-		label:
-			while(fastptr!=null)
+                while(fastptr!=null)
 		{
 			System.out.print(slowptr.data+"-> ");
 			fastptr=fastptr.next.next;
@@ -60,7 +53,7 @@ public class StartingNodeOfLoopInLinkList{
 		if(loopexist==1)
 		{
 			//assigning slowptr points to headreference
-		slowptr=headreference;
+		slowptr=head;
 		while(slowptr!=fastptr)
 		{
 			//incrementing both of them in steps of 1
@@ -93,7 +86,7 @@ public class StartingNodeOfLoopInLinkList{
 		fifth.next=second; 
 		sixth.next=null;
 		
-      	new StartingNodeOfLoopInLinkList().printinglist(first.head);
+      	new StartingNodeOfLoopInLinkList().checkloop(first.head);
        
 }	        
 }	
