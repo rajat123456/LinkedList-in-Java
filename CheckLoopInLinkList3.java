@@ -1,3 +1,5 @@
+***************************************APPROACH 3 USING Using 2 Pointers(Fast and Slow)**************************************************
+
 //Java program for Check, whether Link List has a Loop Using 2 Pointers, Slow Pointer and Fast pointer
 //So here we are traversing the List Once to check loop-> Time Comp(In Worst Case)->O(N)
 
