@@ -24,16 +24,11 @@ public class CheckLoopInLinkList3{
 	  }
 	}
 
-	void printinglist(Node headreference)
-	{
-		if(headreference==null)
-		{
-			return;
-		}
-		
+	void checkloop(Node head)
+	{	
 		//both slow and fast pointers pointing to the head node
-		Node slowptr=headreference;
-		Node fastptr=headreference;
+		Node slowptr=head;
+		Node fastptr=head;
 		
 		//traversing whole list while "null" is not encountered
 		while(fastptr!=null)
@@ -71,7 +66,7 @@ public class CheckLoopInLinkList3{
 		fifth.next=first.head; 
 		sixth.next=null;
 		
-      	new CheckLoopInLinkList3().printinglist(first.head);
+      	new CheckLoopInLinkList3().checkloop(first.head);
        
 }	        
 }	
