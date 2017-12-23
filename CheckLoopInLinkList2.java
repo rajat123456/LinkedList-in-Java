@@ -1,3 +1,5 @@
+**************************************APPROACH 2 USING VISITED as a Field inside every Node of Link List********************************
+
 //Java program for Check, whether Link List has a Loop Using VISITED as a field in Link List
 //So here we are traversing the List Once to check loop-> Time Comp(In Worst Case)->O(N)
 
