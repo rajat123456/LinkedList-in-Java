@@ -1,14 +1,10 @@
 ******************************************************APPROACH 1 USING BRUTEFORCE*******************************************************
 
-//Java program for Check, whether Link List has a Loop Using BRUTEFORCE APPROACH
-//Not so good approach, as it is hardcoded that loop occurs from last node to first only
-//So here we are traversing the List Once to check loop-> Time Comp(In Worst Case)->O(N)
-
 package Singly_Linked_List;
 
 import java.util.Scanner;
 
-public class CheckLoopInLinkList1{
+class CheckLoopInLinkList1{
 
 	Node head;
 	int count;
@@ -25,25 +21,20 @@ public class CheckLoopInLinkList1{
 	  }
 	}
 
-	void printinglist(Node headreference)
-	{
-		if(headreference==null)
-		{
-			return;
-		}
-		
+	void checkloop(Node head)
+	{	
 		//current pointing to the head node
-		Node current=headreference;
+		Node current=head;
 		
 		//traversing whole list while "null" is not encountered
 		while(current!=null)
 		{
 			System.out.print(current.data+"-> ");
-			count++;
+			
 			//Checking if last node pointing again back to first
-			if(current.next==headreference)
+			if(current.next==head)
 			{
-				System.out.println("\nThere is loop is linked list "+current.data+" is pointing back to "+headreference.data);
+				System.out.println("\nThere is loop is linked list "+current.data+" is pointing back to "+head.data);
                 return;
 			}
 			
@@ -51,12 +42,7 @@ public class CheckLoopInLinkList1{
 			current=current.next;
 			
 		}
-		
-		//here current becomes null
-		System.out.println(current);
-		System.out.println("length of Linked List is "+count);
-		
-		}
+     }
 	
 	public static void main(String[]args)
 	{
@@ -77,7 +63,7 @@ public class CheckLoopInLinkList1{
 		//Here Loop Occurs
 		sixth.next=first.head;
 		
-		new CheckLoopInLinkList1().printinglist(first.head);
+		new CheckLoopInLinkList1().checkloop(first.head);
        
 }	        
-}	
+}
