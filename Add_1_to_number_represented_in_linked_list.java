@@ -1,11 +1,12 @@
 package freshly;
 //Add 1 to number represented in linked list
 //Time Complexity is ->O(n) where n is number of digits in a number eg-> 9999(4 digits in a number) 
+// Steps-> 1)Reverse  2)Add 1 to all elements  3)Reverse
 
 class Node
 {
   int data;
-  Node next;
+  Node next;  
   
   Node(int data)
   {
