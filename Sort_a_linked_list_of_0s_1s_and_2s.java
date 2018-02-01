@@ -1,5 +1,7 @@
 package freshly;
 //Sort a linked list of 0's 1's and 2's
+//Steps-> 1)Traverse list to fill the array with data elements of node
+//        2)Again traverse list to overwrite the data elements from the array, and decrement array count  
 
 class Node
 {
