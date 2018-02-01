@@ -1,5 +1,6 @@
 package freshly;
 //Add 1 to number represented in linked list
+//Time Complexity is ->O(n) where n is number of digits in a number eg-> 9999(4 digits in a number) 
 
 class Node
 {
