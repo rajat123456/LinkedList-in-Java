@@ -1,5 +1,5 @@
-//Java program for Finding Kth Node From End of Link List Using 2 Pointers
-//So here we are traversing the List Once-> Time Comp->O(N)
+// Java program for Finding Kth Node From End of Link List Using 2 Pointers
+// So here we are traversing the List Once-> Time Comp->O(N)
 
 package Singly_Linked_List;
 
